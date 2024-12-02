@@ -2,7 +2,7 @@
 
 const FileUpload = () => {
   const whatsappLink =
-    "https://api.whatsapp.com/send/?phone=+201065216442&text=Please+upload+our+photos+here%20%E2%9D%A4%EF%B8%8F%E2%9D%A4%EF%B8%8F&type=phone_number&app_absent=0";
+    "https://api.whatsapp.com/send/?phone=+201065216442&text=Please+upload+our+photos+here%20%3C3%3C3%EF%B8%8F&type=phone_number&app_absent=0";
 
   // const [files, setFiles] = useState([]);
   // const [fileCount, setFileCount] = useState(0); // To track the number of files selected
