@@ -67,10 +67,11 @@ img {
   padding: 5px 10px;
   background-color: #3b3a3a;
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 600px;
 }
 
 .upload-button:hover {
@@ -195,7 +196,8 @@ text {
   .custom-file-label,
   .upload-button,
   .upload-button {
-    font-size: 10px;
+    font-size: 12px;
+    width: 90%;
   }
   .banner_text {
     font-size: 0.9rem;

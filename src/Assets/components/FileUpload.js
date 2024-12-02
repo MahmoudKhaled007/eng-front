@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
 const FileUpload = () => {
+  const whatsappLink =
+    "https://api.whatsapp.com/send/?phone=+201065216442&text=Please+upload+our+photos+here%20%E2%9D%A4%EF%B8%8F%E2%9D%A4%EF%B8%8F&type=phone_number&app_absent=0";
+
   const [files, setFiles] = useState([]);
   const [fileCount, setFileCount] = useState(0); // To track the number of files selected
 
@@ -38,26 +41,15 @@ const FileUpload = () => {
   return (
     <div className="file-upload-container">
       {/* Custom label for the file input */}
-      <label htmlFor="file-input" className="custom-file-label">
-        Upload Files
-      </label>
-
-      {/* Hidden file input */}
-      <input
-        id="file-input"
-        type="file"
-        multiple
-        onChange={handleFileChange}
-        style={{ display: "none" }} // Hide the default input
-      />
-
-      {/* File counter display */}
-      <div id="file-counter" className="file-counter">
-        {fileCount > 0 ? `${fileCount} file(s) selected` : "No files selected"}
-      </div>
 
       {/* Upload button */}
-      <button onClick={handleUpload} className="upload-button">
+      {/* <button onClick={handleUpload} className="upload-button">
+        Upload Memories
+      </button> */}
+      <button
+        onClick={() => window.open(whatsappLink, "_blank")}
+        className="upload-button"
+      >
         Upload Memories
       </button>
     </div>
